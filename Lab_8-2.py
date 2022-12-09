@@ -1,16 +1,11 @@
 #Author: Sean Salafia 12/2/22
 
+def invite_to_party(names):
+    for name in names:
+        print("Hi " + name + ", I'd like to invite you to my party! Please let me know if you can make it.")
+    return names
 
-def list_of_names(names):
-    '''takes list of names and prints a statement for each one with the name substituted for x'''
-    for x in names:
-        print("It is with great pleasure that I would like to inform" + x + "that he is most cordially invited to my birthday party.")
-
-x = input("Would you like to input a new name? (Y/N)?")
-
-if x == "Y":
-    
-
-names = []
-
-
+# Example usage:
+names = ["Sean", "Jan", "Preston"]
+invitees = invite_to_party(names)
+print(invitees)
